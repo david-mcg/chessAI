@@ -1,0 +1,68 @@
+PIECES
+
+PAWN
+can move forward one square (can move forward two on first move)
+can only take diagonally
+if reaches the other end of the board can become either a knight, bishop, rook or queen
+if an opposing pawn moves two squares forward parrallel to it, then it can take via en passant
+ROOK
+can move forward of diagonally
+KNIGHT
+can move vertically two squares and horizontally one
+can move horizontally two squares and vertically one
+BISHOP
+can move diagonally
+KING
+can move to any near square
+if it is in check, it has to move
+if there are no pieces between it and a rook, also the rook hasn't moved, and there is no enemy piece blocking a sqaure it can castle
+castleing means the king moves two squares to either side and the rook moves to the opposite side
+QUEEN
+can move diagonally, horizontally, vertically.
+
+
+
+
+BOARD
+8x8 board
+initial state = 
+[[rook, knight, bishop, queen, king, bishop, knight, rook],
+[pawn, pawn, pawn, pawn, pawn, pawn, pawn, pawn],
+[0,0,0,0,0,0,0,0],
+[0,0,0,0,0,0,0,0],
+[0,0,0,0,0,0,0,0],
+[0,0,0,0,0,0,0,0],
+[pawn, pawn, pawn, pawn, pawn, pawn, pawn, pawn],
+[rook, knight, bishop, queen, king, bishop, knight, rook]]
+       
+
+
+
+
+
+def initBoard:
+    * delcare the 2d Array of objects
+
+    * Place in values of the array 
+
+    * 
+
+
+square {
+    Name: "e4"
+    piece: ""
+}
+
+STATES
+
+
+
+
+CHESS RULES
+if the king is in check and cannot move, the game is over
+pawns on their first move can move forward one or two squares
+
+
+
+
+
